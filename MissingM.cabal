@@ -1,0 +1,27 @@
+Name:               MissingM
+Version:            0.0.4
+Author:             Dylan Just <dylan@techtangents.com>
+License:            BSD3
+License-file:       LICENSE
+Copyright:          Dylan Just
+Maintainer:         Dylan Just
+Category:           Control
+Synopsis:           findM and other missing 'M's
+Description:        findM and other missing 'M's
+Cabal-version:      >= 1.6
+Build-Type:         Simple
+
+
+source-repository head
+  type:     git
+  location: https://techtangents@github.com/techtangents/missingm.git
+
+
+Library
+  Build-Depends:    base < 5 && >= 3
+  hs-source-dirs:    src
+  GHC-Options:      -Wall
+                    -fno-warn-type-defaults
+                    -fno-warn-name-shadowing
+
+  Exposed-Modules:  Control.Monad.MissingM
