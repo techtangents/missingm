@@ -21,7 +21,7 @@ tests = [
 instance Show (a -> b) where
   show = const "(function)"
 
--- just testing the Identity monad for now.
+-- just testing with the Identity monad for now.
 
 prop_findMvsfilter :: (Int -> Bool) -> [Int] -> Bool
 prop_findMvsfilter f as =
